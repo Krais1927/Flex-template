@@ -1,0 +1,26 @@
+@use "../../libs/normalize.css/normalize";
+
+@use "variables";
+@use "skin";
+@use "mixins-media";
+@use "mixins";
+
+@use "common";
+
+@use "header/header";
+@use "header/header-logo";
+@use "header/header-menu";
+
+@use "main/main";
+@use "main/main-breadcrumb";
+@use "main/main-content";
+@use "main/main-content-item";
+
+@use "aside/left";
+@use "aside/right";
+
+@use "widgets/widgets";
+@use "widgets/search";
+@use "widgets/categories";
+@use "widgets/news";
+@use "footer";

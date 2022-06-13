@@ -1,0 +1,39 @@
+@use "index" as *; 
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  overflow-y: scroll;
+  font-family: $font-main ;
+  font-size: $font-size;
+  overflow: hidden;
+  line-height: 1.5em;
+}
+
+body {
+  opacity: 1;
+  transition: opacity 1s ease 0s;
+  background-color: #d8b036;
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  background-image: url(../img/global-bg.jpg);
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+  @include lg-min {
+   padding: 0 $gap;
+  }
+  @include lg {
+    padding: 0 $gap*0.5 ;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #eeeeee;
+}

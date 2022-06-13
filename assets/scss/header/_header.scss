@@ -1,0 +1,9 @@
+@use "../index" as *;
+
+.header{
+  min-height: 100px;
+  @include bg-color($alfa: 0.5, $color: $color-dark) ;
+  border-radius: 0 0 7px 7px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}

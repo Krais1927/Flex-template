@@ -1,0 +1,8 @@
+temp/
+*.bat
+# IntellijIdea files
+.idea/
+*/scss-comb/
+node_modules/
+.DS_Store
+.vscode/

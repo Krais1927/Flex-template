@@ -1,0 +1,29 @@
+@use "index" as *; 
+
+.footer{
+  margin-bottom: $gap;
+
+  &-top{
+    display: flex;
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+    @include md {
+      flex-wrap: wrap;
+    }
+    
+    &__item{
+      @include sm-min{
+        flex: 0 0 25%;
+      }
+      padding: 0 7.5px;
+    }
+  }
+  &-bottom{
+    text-align: center;
+
+    h3{
+      max-width: 300px;
+    margin: 0 auto;
+    }
+  }
+}

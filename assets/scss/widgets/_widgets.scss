@@ -1,0 +1,21 @@
+@use "index" as *; 
+
+.widget{
+  @include bg-color ;
+  border-radius: 7px;
+  padding: 15px;
+  margin:0 0 15px;
+  color: $color-light;
+
+  h3{
+    margin-top: 5px;
+    @include block-header ;
+  }
+  p {
+    line-height: 2em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

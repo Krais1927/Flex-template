@@ -1,0 +1,28 @@
+@use "index" as *; 
+
+.main-breadcrumb{
+  margin-bottom: $gap;
+  text-align: right;
+  padding: 8px 12px;
+  border-radius: 7px;
+  background: linear-gradient(to right, rgba($color-dark, 0) 0%, rgba($color-dark, 0.8) 100%);
+  letter-spacing: 2px;
+  a{
+    font-weight: bold;
+
+    &:hover{
+      @include text-shadow;
+    }
+  }
+  span {
+    position: relative;
+
+    margin-right: 7px;
+
+    color: $color-gray;
+  }
+  i{
+    color: $color-gray ;
+    font-weight: bold;
+  }
+}

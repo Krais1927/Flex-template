@@ -1,0 +1,13 @@
+@use "index" as *; 
+
+.main{
+  flex-grow: 1;
+  order:2;
+
+  @include lg-min{
+    flex: 0 0 calc(100% - ($right-sidebar-width + $left-sidebar-width));
+    padding-left: $gap;
+    padding-right: $gap;
+  }
+  
+}

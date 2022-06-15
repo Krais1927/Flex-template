@@ -1,0 +1,29 @@
+@use "index" as *;
+
+.widget-categories{
+  
+  &__list{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+
+  }
+  &__item{
+    border-radius: 7px;
+    &:hover
+      {
+        @include bg-color;
+        a{
+          padding-left: 10px;
+        }
+
+    }
+    a{
+      display: block;
+      padding: 5px 0;
+      transition: padding-left 0.5s;
+      
+    }
+  }
+}

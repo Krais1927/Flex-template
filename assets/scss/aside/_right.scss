@@ -1,0 +1,15 @@
+@use "index" as *; 
+
+.right{
+  order: 3;
+  @include lg-min {
+    flex: 0 0 $right-sidebar-width;
+    
+    margin-bottom: $gap-sm;
+
+    .widget-news {
+      width: $right-sidebar-width;
+    }
+  }
+
+}

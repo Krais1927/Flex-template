@@ -9,5 +9,14 @@
     padding-left: $gap;
     padding-right: $gap;
   }
+  @include lg-md{
+    flex: 0 0 calc(100% -  $left-sidebar-width);
+    padding-left: $gap;
+    padding-right: 0;
+  }
+  @include md{
+    order: 1;
+    
+  }
   
 }

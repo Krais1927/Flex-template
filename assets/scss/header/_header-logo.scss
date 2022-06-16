@@ -19,9 +19,13 @@
       max-width: 400px;
       margin-bottom: $gap;
     }
-    @include sm {
+    @include sm-xx {
       max-width: 300px;
       margin-bottom: $gap*0.5;
+    }
+    @include xx {
+      width: 80%;
+      margin-bottom: $gap-sm;
     }
   }
 

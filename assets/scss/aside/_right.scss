@@ -11,5 +11,17 @@
       width: $right-sidebar-width;
     }
   }
+  @include lg-md{
+    width: 100%;
+    
+    margin-bottom: $gap-sm;
+  }
+  @include md-xs{
+    width: 50%;
+    padding-left: 7.5px;
+  }
+  @include xs{
+    width: 100%;
+  }
 
 }
